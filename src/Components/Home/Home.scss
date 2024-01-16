@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+
+.home-container {
+  //   background-color: #163020;
+  background-color: #000000;
+  height: 115vh;
+  width: 100vw;
+  position: relative;
+  padding: 100px;
+}
+
+.home-orange-container {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  //   background-color: #f0ece5;
+  background-color: #503c3c;
+  left: 40px;
+  border-radius: 5px;
+  top: 40px;
+}
+
+.home-box-container {
+  position: absolute;
+  height: 150px;
+  width: 350px;
+  //   background-color: #f0ece5;
+  background-color: #503c3c;
+  top: 630px;
+  border-radius: 5px;
+  right: 10px;
+}
+
+.home-main-container {
+  position: absolute;
+  height: 650px;
+  width: 90%;
+  //   background-color: #5c8374;
+  //   background-color: #698077;
+  background-color: #b6bbc4;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+// .home-main-container:hover {
+//   box-shadow: 2px 5px 10px #fff;
+// }
+
+.home-inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-img-container {
+  flex: 1;
+  height: 571px;
+  z-index: 9;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+}
+
+.center-text-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+
+  .home-center-box-container {
+    position: absolute;
+    height: 80px;
+    width: 260px;
+    background-color: #f0ece5;
+    left: -15px;
+    top: 100px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-center-box-container:hover {
+    height: 200px;
+    width: 200px;
+    left: 150px;
+    top: 100px;
+  }
+
+  .home-name {
+    color: #31304d;
+    font-size: 50px;
+    max-width: 80%;
+    font-family: "Poppins", sans-serif;
+    line-height: 48px;
+    z-index: 9;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-name:hover {
+    text-shadow: 2px 2px 2px #fff;
+  }
+
+  .home-name-disc {
+    color: #31304d;
+    font-size: 20px;
+    width: 80%;
+    font-family: "Raleway", sans-serif;
+    // font-family: "Delicious Handrawn", cursive;
+  }
+}
+
+.right-img-text-container {
+  flex: 1;
+  position: relative;
+
+  .home-inner-orange-container {
+    position: absolute;
+    height: 180px;
+    width: 100px;
+    background-color: #f0ece5;
+    right: 0;
+    top: 200px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .home-inner-orange-container:hover {
+    right: 30px;
+  }
+
+  img {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    height: 270px;
+    width: auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  img:hover {
+    box-shadow: 5px 5px 5px #8b5018;
+    right: 80px;
+  }
+
+  .home-hr {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 100px;
+    left: -130px;
+    background-color: #31304d;
+  }
+
+  .home-icons-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+    bottom: 50px;
+
+    .home-icon-container {
+      padding: 3px;
+      color: #31304d;
+      font-size: 23px;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      color: grey;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .home-icon-container:hover {
+      color: black;
+      box-shadow: 5px 5px 5px #000;
+    }
+  }
+}
+
+// <Typewriter
+//               options={{
+//                 strings: ["Hello,", "My name is Ankush Singh"],
+//                 autoStart: true,
+//                 loop: true,
+//                 wrapperClassName: "home-name",
+//                 pauseFor: 2000,
+//               }}
+//             />
