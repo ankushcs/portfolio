@@ -174,7 +174,7 @@
 
     .home-icon-container {
       padding: 3px;
-      color: #31304d;
+      // color: #31304d;
       font-size: 23px;
       border-radius: 3px;
       display: flex;
@@ -191,13 +191,3 @@
     }
   }
 }
-
-// <Typewriter
-//               options={{
-//                 strings: ["Hello,", "My name is Ankush Singh"],
-//                 autoStart: true,
-//                 loop: true,
-//                 wrapperClassName: "home-name",
-//                 pauseFor: 2000,
-//               }}
-//             />

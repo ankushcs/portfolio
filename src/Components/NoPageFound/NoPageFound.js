@@ -1,5 +1,7 @@
 import Navbar from "../Navbar/Navbar";
 import "./NoPageFound.scss";
+import Lottie from "lottie-react";
+import ErrorPage from "../../assets/error_lottie.json";
 
 const NoPageFound = () => {
   return (
@@ -9,8 +11,7 @@ const NoPageFound = () => {
       <div className="nopagefound-main-container">
         <Navbar />
         <div className="nopagefound-inner-container">
-          <p className="error-msg-line1">404</p>
-          <p className="error-msg-line2">No Page Found</p>
+          <Lottie className="lottie-no-page-found" animationData={ErrorPage} />
         </div>
       </div>
     </div>

@@ -44,16 +44,19 @@
   flex-direction: column;
   height: 85%;
 
-  .error-msg-line1 {
-    font-family: "Poppins", sans-serif;
-    color: #000000;
-    font-weight: 900;
-    font-size: 62px;
-  }
-  .error-msg-line2 {
-    font-family: "Poppins", sans-serif;
-    color: #000000;
-    font-weight: 600;
-    font-size: 22px;
+  // .error-msg-line1 {
+  //   font-family: "Poppins", sans-serif;
+  //   color: #000000;
+  //   font-weight: 900;
+  //   font-size: 62px;
+  // }
+  // .error-msg-line2 {
+  //   font-family: "Poppins", sans-serif;
+  //   color: #000000;
+  //   font-weight: 600;
+  //   font-size: 22px;
+  // }
+  .lottie-no-page-found {
+    height: inherit;
   }
 }

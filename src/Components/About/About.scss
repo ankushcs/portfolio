@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 
 .about-container {
   background-color: #000000;
-  height: 115vh;
+  min-height: 290vh;
   width: 100vw;
-  position: relative;
   padding: 100px;
 }
 
@@ -33,7 +33,7 @@
 
 .about-main-container {
   position: absolute;
-  height: 650px;
+  min-height: 600px;
   width: 90%;
   background-color: #b6bbc4;
   border-radius: 5px;
@@ -46,7 +46,7 @@
   justify-content: space-between;
 
   .about-details-container {
-    flex: 2;
+    flex: 3;
 
     .about-heading {
       color: #31304d;
@@ -60,11 +60,12 @@
 
     .about-heading:hover {
       text-shadow: 2px 2px 2px #fff;
+      // filter: drop-shadow(5px 5px 5px #fff);
     }
 
     .about-details-para {
       font-family: "Raleway", sans-serif;
-      font-weight: 700;
+      font-weight: 300;
       text-align: justify;
       letter-spacing: 2px;
     }
@@ -72,5 +73,194 @@
 
   .about-img-container {
     flex: 1;
+  }
+}
+
+.about-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  font-family: "Raleway", sans-serif;
+
+  .about-icon-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: grey;
+    border: 1px solid #e0e0e0;
+    width: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.4s ease-in-out;
+
+    .about-icons {
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .about-icon-name-container:hover {
+    color: black;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 5px #000;
+  }
+}
+
+.about-projects-container {
+  position: absolute;
+  top: 800px;
+  width: 90%;
+
+  .about-projects-heading {
+    color: #fff;
+    font-size: 50px;
+    min-width: 80%;
+    font-family: "Poppins", sans-serif;
+    line-height: 48px;
+    transition: all 0.5s ease-in-out;
+    display: inline;
+  }
+
+  .about-projects-heading:hover {
+    text-shadow: 1px 1px 1px #e0e0e0;
+    color: #000;
+  }
+  .about-my-projects-container {
+    height: 600px;
+    width: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+
+    .about-project-container {
+      color: #b6bbc4;
+      flex: 1;
+      height: inherit;
+      border: 1px solid #b6bbc4;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: transparent;
+      transition: all 0.5s ease-in-out;
+
+      .project-heading {
+        color: #31304d;
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+        line-height: 36px;
+        z-index: 9;
+        display: inline;
+      }
+
+      .project-heading:hover {
+        text-shadow: 2px 2px 2px #979797;
+      }
+
+      .lottie-project {
+        height: 300px;
+      }
+
+      .project-description {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-weight: 300;
+        text-align: justify;
+        letter-spacing: 2px;
+      }
+
+      .project-techs {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+      }
+
+      .project-link {
+        text-decoration: none;
+        color: #5c5b71;
+      }
+      .project-link:hover {
+        text-decoration: underline;
+      }
+
+      .project-techs {
+        margin: 15px 0;
+      }
+    }
+
+    .about-project-container:hover {
+      margin-top: 8px;
+      background-color: #b6bbc4;
+      color: #000;
+    }
+  }
+}
+
+.about-card-container {
+  position: absolute;
+  top: 1600px;
+  width: 90%;
+
+  .about-card-heading-para-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-card-heading {
+    color: #fff;
+    font-size: 50px;
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    line-height: 58px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  // .about-card-heading:hover {
+  //   text-shadow: 1px 1px 1px #e0e0e0;
+  //   color: #000;
+  // }
+
+  .about-card-sub-heading {
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+  }
+  .about-card-sub-heading:hover {
+    text-shadow: 1px 1px 1px #e0e0e0;
+    color: #000;
+  }
+
+  .about-card-para {
+    color: #b6bbc4;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    line-height: 28px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .about-card-para:hover {
+    letter-spacing: 2.2px;
+    width: 70%;
+  }
+}
+
+.about-card-inner-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 50px;
+
+  .about-card {
+    border: 1px solid red;
+    height: 300px;
+    width: 400px;
   }
 }
