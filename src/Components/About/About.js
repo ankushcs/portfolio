@@ -165,8 +165,8 @@ const About = () => {
       <div className="about-card-container">
         <div className="about-card-heading-para-container">
           <p className="about-card-heading">
-            A Front End Developer with{" "}
-            <span className="about-card-sub-heading">Design Sense</span>.
+            A Front-End developer with{" "}
+            <span className="about-card-sub-heading">Design Sense</span>
           </p>
           <p className="about-card-para">
             Creating visually appealing websites is vital, but equally crucial
