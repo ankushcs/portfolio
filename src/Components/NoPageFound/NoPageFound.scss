@@ -23,8 +23,8 @@
   height: 150px;
   width: 350px;
   background-color: #503c3c;
-  top: 630px;
   border-radius: 5px;
+  top: 630px;
   right: 10px;
 }
 
@@ -44,19 +44,61 @@
   flex-direction: column;
   height: 85%;
 
-  // .error-msg-line1 {
-  //   font-family: "Poppins", sans-serif;
-  //   color: #000000;
-  //   font-weight: 900;
-  //   font-size: 62px;
-  // }
-  // .error-msg-line2 {
-  //   font-family: "Poppins", sans-serif;
-  //   color: #000000;
-  //   font-weight: 600;
-  //   font-size: 22px;
-  // }
   .lottie-no-page-found {
     height: inherit;
+  }
+}
+
+// responsiveness for mobile
+@media screen and (max-width: 425px) {
+  .nopagefound-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .nopagefound-orange-container {
+    display: none;
+  }
+
+  .nopagefound-box-container {
+    display: none;
+  }
+}
+
+// responsiveness for tablets
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .nopagefound-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .nopagefound-orange-container {
+    left: 20px !important;
+    top: 20px !important;
+  }
+
+  .nopagefound-box-container {
+    top: 570px;
+    right: 20px;
+  }
+}
+
+// responsiveness for tablets
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nopagefound-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .nopagefound-orange-container {
+    left: 20px !important;
+    top: 20px !important;
+  }
+
+  .nopagefound-box-container {
+    top: 570px;
+    right: 20px;
   }
 }

@@ -12,7 +12,11 @@ import Project_1 from "../../assets/project_job.json";
 import Project_2 from "../../assets/project_food.json";
 import { CiMobile3 } from "react-icons/ci";
 import { FaLaptopCode } from "react-icons/fa";
-import { SiHyperledger } from "react-icons/si";
+import { GiMoebiusStar } from "react-icons/gi";
+
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 
 const iconsArr = [
   {
@@ -87,7 +91,7 @@ const aboutCards = [
   {
     id: 3,
     title: "Cutting Edge",
-    icon: SiHyperledger,
+    icon: GiMoebiusStar,
     content:
       "I stay current with the latest tools and technologies, including ReactJS, NextJS, and Tailwind CSS, among others. I select the most suitable tools for each task, implementing them in the most efficient manner.",
   },
@@ -96,76 +100,97 @@ const aboutCards = [
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-orange-container"></div>
-      <div className="about-box-container"></div>
+      <Fade left>
+        <div className="about-orange-container"></div>
+      </Fade>
+      <Fade right>
+        <div className="about-box-container"></div>
+      </Fade>
       <div className="about-main-container">
         <Navbar />
         <div className="about-inner-container">
           <div className="about-img-container">
-            <Lottie className="lottie" animationData={aboutMeLottie} />
+            <Lottie
+              className="lottie-about-img"
+              animationData={aboutMeLottie}
+            />
           </div>
           <div className="about-details-container">
-            <p className="about-heading">About</p>
-            <p className="about-details-para">
-              Welcome to my portfolio! I am a dedicated frontend developer with
-              over 2 years of hands-on experience in crafting seamless and
-              visually appealing digital experiences. My skill set spans HTML,
-              CSS, JavaScript, Bootstrap, React JS, hooks, and Material-UI
-              (MUI). From building applications from the ground up to enhancing
-              existing projects, I leverage my strong frontend skills to deliver
-              top-notch code that exceeds client expectations. I am fueled by a
-              passion for continuous learning, always seeking to improve and
-              enhance productivity. Each project I undertake becomes an
-              opportunity for growth, pushing me to explore novel approaches and
-              overcome challenges efficiently. My commitment to delivering
-              high-quality code is unwavering, ensuring client satisfaction and
-              contributing to the success of every venture. Beyond technical
-              proficiency, I prioritize communication, collaboration, and
-              teamwork. I believe that these aspects are essential for the
-              seamless execution of projects. With a dynamic approach and
-              dedication, I am ready to contribute impactful digital experiences
-              and exceptional outcomes to new ventures. Let's collaborate and
-              create something extraordinary together!
-            </p>
+            <Fade top cascade>
+              <p className="about-heading">About</p>
+            </Fade>
+            <Fade right>
+              <p className="about-details-para">
+                Welcome to my portfolio! With over 2 years of hands-on
+                experience, I am a dedicated frontend developer crafting
+                seamless, visually appealing digital experiences. My versatile
+                skill set includes HTML, CSS, JavaScript, Bootstrap, React JS,
+                hooks, and Material-UI (MUI). Whether building applications from
+                the ground up or enhancing existing projects, I leverage strong
+                frontend skills to deliver top-notch code, exceeding client
+                expectations. Fueled by a passion for continuous learning, I
+                seek to improve and enhance productivity, viewing each project
+                as an opportunity for growth. My commitment to delivering
+                high-quality code is unwavering, ensuring client satisfaction
+                and contributing to the success of every venture.
+              </p>
+              <p className="about-details-para">
+                Beyond technical proficiency, I prioritize communication,
+                collaboration, and teamwork—essential aspects for the seamless
+                execution of projects. With a dynamic approach and dedication,
+                I'm ready to contribute impactful digital experiences and
+                exceptional outcomes to new ventures. Let's collaborate and
+                create something extraordinary together!
+              </p>
+            </Fade>
           </div>
         </div>
         <div className="about-icons-container">
           {iconsArr.map((icon) => (
-            <div className="about-icon-name-container" key={icon.id}>
-              <icon.iconName className="about-icons" />
-              <p>{icon.text}</p>
-            </div>
+            <Zoom top cascade key={icon.id}>
+              <div className="about-icon-name-container">
+                <icon.iconName className="about-icons" />
+                <p className="about-icons-text">{icon.text}</p>
+              </div>
+            </Zoom>
           ))}
         </div>
       </div>
       <div className="about-projects-container">
-        <p className="about-projects-heading">My Recent Projects</p>
-        <div className="about-my-projects-container">
-          {projectDetails.map((project) => (
-            <div className="about-project-container" key={project.id}>
-              <p className="project-heading">{project.heading}</p>
-              <Lottie className="lottie-project" animationData={project.img} />
-              <p className="project-description">{project.description}</p>
-              {project.loginDetails && (
-                <p className="project-description">{project.loginDetails}</p>
-              )}
-              <p className="project-techs">Tech Used : {project.tech_used}</p>
-              <a
-                href={project.link}
-                className="project-link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Check out here
-              </a>
-            </div>
-          ))}
-        </div>
+        <Slide right cascade>
+          <p className="about-projects-heading">My Recent Projects</p>
+        </Slide>
+        <Slide right cascade>
+          <div className="about-my-projects-container">
+            {projectDetails.map((project) => (
+              <div className="about-project-container" key={project.id}>
+                <p className="project-heading">{project.heading}</p>
+                <Lottie
+                  className="lottie-project"
+                  animationData={project.img}
+                />
+                <p className="project-description">{project.description}</p>
+                {project.loginDetails && (
+                  <p className="project-description">{project.loginDetails}</p>
+                )}
+                <p className="project-techs">Tech Used : {project.tech_used}</p>
+                <a
+                  href={project.link}
+                  className="project-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Check out here
+                </a>
+              </div>
+            ))}
+          </div>
+        </Slide>
       </div>
       <div className="about-card-container">
         <div className="about-card-heading-para-container">
           <p className="about-card-heading">
-            A Front-End developer with{" "}
+            A Front-End developer with a{" "}
             <span className="about-card-sub-heading">Design Sense</span>
           </p>
           <p className="about-card-para">
@@ -175,18 +200,21 @@ const About = () => {
             future development.
           </p>
         </div>
-        <div className="about-card-inner-container">
-          {aboutCards.map((card) => (
-            <div className="about-card" key={card.id}>
-              <div className="about-card-icon-container">
-                <card.icon className="about-card-icon" />
+        <Fade right cascade>
+          <div className="about-card-inner-container">
+            {aboutCards.map((card) => (
+              <div className="about-card" key={card.id}>
+                <div className="about-card-icon-container">
+                  <card.icon className="about-card-icon" />
+                </div>
+                <p className="about-card-inner-heading">{card.title}</p>
+                <p className="about-card-inner-para">{card.content}</p>
               </div>
-              <p className="about-card-inner-heading">{card.title}</p>
-              <p className="about-card-inner-para">{card.content}</p>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Fade>
       </div>
+      <div className="about-other-say-container"></div>
     </div>
   );
 };

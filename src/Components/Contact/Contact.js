@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import Lottie from "lottie-react";
 import emailLottie from "../../assets/emailLottie.json";
 import "./Contact.scss";
+import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   const form = useRef();
@@ -32,12 +33,15 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <div className="contact-orange-container"></div>
-      <div className="contact-box-container"></div>
+      <Fade left>
+        <div className="contact-orange-container"></div>
+      </Fade>
+      <Fade right>
+        <div className="contact-box-container"></div>
+      </Fade>
       <div className="contact-main-container">
         <Navbar />
-        <div id="contact" className="contact-inner-container ">
-          {/* <h1 className="contact-us-heading">CONTACT US</h1> */}
+        <div id="contact" className="contact-inner-container">
           <div className="contact-box">
             <form ref={form} onSubmit={sendEmail} className="form-container">
               <div className="label-input-box">
