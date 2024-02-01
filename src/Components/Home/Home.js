@@ -12,10 +12,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <Fade left>
-        <div className="about-orange-container"></div>
+        <div className="home-orange-container"></div>
       </Fade>
       <Fade top>
-        <div className="about-box-container"></div>
+        <div className="home-box-container"></div>
       </Fade>
       <div className="home-main-container">
         <Navbar />

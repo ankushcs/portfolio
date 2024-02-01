@@ -6,9 +6,9 @@
 
 .about-container {
   background-color: #000000;
-  height: 290vh;
+  height: 2300px;
   width: 100vw;
-  padding: 100px;
+  padding: 80px;
 }
 
 .about-orange-container {
@@ -26,9 +26,9 @@
   height: 150px;
   width: 350px;
   background-color: #503c3c;
-  top: 600px;
+  top: 570px;
   border-radius: 5px;
-  right: 10px;
+  right: 30px;
 }
 
 .about-main-container {
@@ -308,11 +308,6 @@
   }
 }
 
-// ,
-//   "devDependencies": {
-//     "@babel/plugin-proposal-private-property-in-object": "^7.23.4"
-//   }
-
 // responsive for mobile devices
 @media screen and (max-width: 425px) {
   .about-container {
@@ -321,13 +316,17 @@
   }
 
   .about-orange-container {
-    top: 10px !important;
+    top: 10px;
     left: 10px;
   }
 
   .about-box-container {
-    display: block;
-    top: 1080px;
+    top: 1090px;
+    right: 10px;
+  }
+
+  .about-main-container {
+    height: 1200px;
   }
 
   // about-container
@@ -424,6 +423,10 @@
   .about-box-container {
     display: block;
     top: 780px !important;
+  }
+
+  .about-main-container {
+    height: 870px;
   }
 
   // about-container

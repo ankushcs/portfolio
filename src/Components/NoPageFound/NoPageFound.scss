@@ -2,10 +2,10 @@
 
 .nopagefound-container {
   background-color: #000000;
-  height: 115vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
-  padding: 100px;
+  padding: 80px;
 }
 
 .nopagefound-orange-container {
@@ -24,8 +24,8 @@
   width: 350px;
   background-color: #503c3c;
   border-radius: 5px;
-  top: 630px;
-  right: 10px;
+  top: 610px;
+  right: 30px;
 }
 
 .nopagefound-main-container {
@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    height: 750px;
   }
 
   .nopagefound-orange-container {
@@ -85,7 +86,7 @@
   }
 }
 
-// responsiveness for tablets
+// responsiveness for small screens
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .nopagefound-container {
     display: flex;

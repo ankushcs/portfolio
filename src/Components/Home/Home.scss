@@ -5,10 +5,10 @@
 
 .home-container {
   background-color: #000000;
-  height: 115vh;
+  height: 100vh;
   width: 100vw;
   position: relative;
-  padding: 100px;
+  padding: 80px;
 }
 
 .home-orange-container {
@@ -26,9 +26,9 @@
   height: 150px;
   width: 350px;
   background-color: #503c3c;
-  top: 630px;
+  top: 610px;
   border-radius: 5px;
-  right: 10px;
+  right: 30px;
 }
 
 .home-main-container {
@@ -185,11 +185,12 @@
     height: 245vh;
   }
 
-  .about-orange-container {
-    width: 80% !important;
+  .home-orange-container {
+    top: 15px;
+    left: 10px;
   }
 
-  .about-box-container {
+  .home-box-container {
     display: none;
   }
 
@@ -267,11 +268,12 @@
     height: 245vh;
   }
 
-  .about-orange-container {
-    display: none;
+  .home-orange-container {
+    top: 20px;
+    left: 20px;
   }
 
-  .about-box-container {
+  .home-box-container {
     display: none;
   }
 
@@ -346,12 +348,12 @@
   .home-container {
     padding: 40px;
 
-    .about-orange-container {
+    .home-orange-container {
       left: 20px !important;
       top: 20px !important;
     }
 
-    .about-box-container {
+    .home-box-container {
       top: 480px !important;
       right: 40px !important;
     }
