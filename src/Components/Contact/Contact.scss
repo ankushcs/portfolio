@@ -5,7 +5,7 @@
 
 .contact-container {
   background-color: #000000;
-  height: 100vh;
+  height: 900px;
   width: 100vw;
   position: relative;
   padding: 80px;
@@ -165,12 +165,12 @@
   }
 
   .contact-box-container {
-    top: 1000px;
+    top: 1010px;
     right: 10px;
   }
 
   .contact-main-container {
-    height: 150vh;
+    height: 1100px;
   }
 
   .contact-box {
@@ -199,18 +199,17 @@
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .contact-container {
     padding: 40px;
-    height: 105vh;
+    height: 850px;
   }
 
-  .about-orange-container {
+  .contact-orange-container {
     display: block;
     top: 20px;
     left: 20px;
   }
 
-  .about-box-container {
-    display: block;
-    top: 570px;
+  .contact-box-container {
+    top: 56 0px;
     right: 20px;
   }
 
@@ -231,15 +230,15 @@
     height: 100vh;
   }
 
-  .about-orange-container {
+  .contact-orange-container {
     display: block;
     top: 20px;
     left: 20px;
   }
 
-  .about-box-container {
+  .contact-box-container {
     display: block;
     top: 580px;
-    right: 25px;
+    right: 2px;
   }
 }

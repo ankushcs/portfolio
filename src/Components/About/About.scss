@@ -312,7 +312,7 @@
 @media screen and (max-width: 425px) {
   .about-container {
     padding: 20px;
-    height: 4400px;
+    height: 4700px;
   }
 
   .about-orange-container {
@@ -321,12 +321,12 @@
   }
 
   .about-box-container {
-    top: 1090px;
+    top: 1120px;
     right: 10px;
   }
 
   .about-main-container {
-    height: 1200px;
+    height: 1230px;
   }
 
   // about-container
@@ -337,6 +337,7 @@
 
     .about-details-para {
       font-size: 14px;
+      text-align: start !important;
     }
   }
 
@@ -356,7 +357,7 @@
 
   // project-container
   .about-projects-container {
-    top: 1300px;
+    top: 1400px;
 
     .about-projects-heading {
       font-size: 38px;
@@ -383,7 +384,7 @@
 
   // card-container
   .about-card-container {
-    top: 2900px;
+    top: 3100px;
 
     .about-card-heading-para-container {
       text-align: center;
@@ -412,7 +413,7 @@
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .about-container {
     padding: 40px;
-    height: 3600px;
+    height: 3800px;
   }
 
   .about-orange-container {
@@ -464,7 +465,7 @@
   }
   // project-container
   .about-projects-container {
-    top: 1000px;
+    top: 1100px;
 
     .about-projects-heading {
       font-size: 38px;
@@ -490,7 +491,7 @@
 
   // card-container
   .about-card-container {
-    top: 2400px;
+    top: 2500px;
 
     .about-card-heading-para-container {
       text-align: center;
